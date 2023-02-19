@@ -7,6 +7,7 @@ import Footer from './component/Footer'
 import Header from './component/Header'
 import Home from './component/Home'
 import Loading from './component/Loading'
+import NotFound from './component/NotFound'
 import Services from './component/Services'
 
 
@@ -22,6 +23,7 @@ export default function App() {
         <Route path='services' element={<Services/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='blog' element={<Blog/>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </>
